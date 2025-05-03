@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NearBy"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#F45C3B"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Nearby Grid -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:alignmentMode="alignMargins"
+            android:useDefaultMargins="true"
+            android:orientation="horizontal">
+
+            <!-- Location Card -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_white_bg"
+                android:padding="8dp"
+                android:layout_marginBottom="12dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/galleface" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|start"
+                        android:layout_margin="6dp"
+                            android:text="📍 Colombo"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:background="#55000000"
+                        android:paddingHorizontal="6dp"
+                        android:paddingVertical="2dp" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Galle Face"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginTop="6dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⭐ 4.1 (28)"
+                    android:textSize="12sp"
+                    android:textColor="#F5A623" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Galle Face Green, a historic urban park..."
+                    android:textSize="12sp"
+                    android:textColor="#666666"
+                    android:maxLines="3"
+                    android:ellipsize="end" />
+            </LinearLayout>
+
+            <!-- Copy the above block and update for each place -->
+            <!-- Example: Lotus Tower -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_white_bg"
+                android:padding="8dp"
+                android:layout_marginBottom="12dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/lotus" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|start"
+                        android:layout_margin="6dp"
+                        android:text="📍 Colombo"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:background="#55000000"
+                        android:paddingHorizontal="6dp"
+                        android:paddingVertical="2dp" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lotus Tower"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginTop="6dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⭐ 3.7 (45)"
+                    android:textSize="12sp"
+                    android:textColor="#F5A623" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rising towards Colombo’s skyline..."
+                    android:textSize="12sp"
+                    android:textColor="#666666"
+                    android:maxLines="3"
+                    android:ellipsize="end" />
+            </LinearLayout>
+
+            <!-- Repeat for other locations like Gangaramaya, Park, Zoo, Port City -->
+            <!-- Replace image and text content as needed -->
+
+            <!-- Location Card -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_white_bg"
+                android:padding="8dp"
+                android:layout_marginBottom="12dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_7" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|start"
+                        android:layout_margin="6dp"
+                        android:text="📍 Colombo"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:background="#55000000"
+                        android:paddingHorizontal="6dp"
+                        android:paddingVertical="2dp" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gangaramaya"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginTop="6dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⭐ 4.1 (28)"
+                    android:textSize="12sp"
+                    android:textColor="#F5A623" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gangaramaya – Gangaramaya Temple Official Website
+⁦A temple is a beacon, a lighthouse for the .."
+                    android:textSize="12sp"
+                    android:textColor="#666666"
+                    android:maxLines="3"
+                    android:ellipsize="end" />
+            </LinearLayout>
+
+            <!-- Copy the above block and update for each place -->
+            <!-- Example: Lotus Tower -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_white_bg"
+                android:padding="8dp"
+                android:layout_marginBottom="12dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_8" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|start"
+                        android:layout_margin="6dp"
+                        android:text="📍 Colombo"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:background="#55000000"
+                        android:paddingHorizontal="6dp"
+                        android:paddingVertical="2dp" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Viharamahadevi Park"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginTop="6dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⭐ 4.7 (45)"
+                    android:textSize="12sp"
+                    android:textColor="#F5A623" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⁦Viharamahadevi Park is a ⁩⁦public park located in Cinnamon Gardens, in Colombo⁩⁦, situated in front of the colonial-era Town Hall in Sri Lanka.⁩"
+                    android:textSize="12sp"
+                    android:textColor="#666666"
+                    android:maxLines="3"
+                    android:ellipsize="end" />
+            </LinearLayout>
+
+            <!-- Repeat for other locations like Gangaramaya, Park, Zoo, Port City -->
+            <!-- Replace image and text content as needed -->
+            <!-- Location Card -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_white_bg"
+                android:padding="8dp"
+                android:layout_marginBottom="12dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_9" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|start"
+                        android:layout_margin="6dp"
+                        android:text="📍 Colombo"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:background="#55000000"
+                        android:paddingHorizontal="6dp"
+                        android:paddingVertical="2dp" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dehiwala Zoo"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginTop="6dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⭐ 3.1 (18)"
+                    android:textSize="12sp"
+                    android:textColor="#F5A623" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="National Zoological Gardens of Sri Lanka is a zoological garden in Dehiwala, Sri Lanka, founded in 1936. Its sprawling areas are.."
+                    android:textSize="12sp"
+                    android:textColor="#666666"
+                    android:maxLines="3"
+                    android:ellipsize="end" />
+            </LinearLayout>
+
+            <!-- Copy the above block and update for each place -->
+            <!-- Example: Lotus Tower -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_white_bg"
+                android:padding="8dp"
+                android:layout_marginBottom="12dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_10" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|start"
+                        android:layout_margin="6dp"
+                        android:text="📍 Colombo"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:background="#55000000"
+                        android:paddingHorizontal="6dp"
+                        android:paddingVertical="2dp" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Port City"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginTop="6dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⭐ 3.8 (8)"
+                    android:textSize="12sp"
+                    android:textColor="#F5A623" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Colombo Port City Special Economic Zone (SEZ) is the engine of Sri Lanka's economic development as a regional commercial hub and financial centre"
+                    android:textSize="12sp"
+                    android:textColor="#666666"
+                    android:maxLines="3"
+                    android:ellipsize="end" />
+            </LinearLayout>
+
+            <!-- Repeat for other locations like Gangaramaya, Park, Zoo, Port City -->
+            <!-- Replace image and text content as needed -->
+            <!-- Location Card -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_white_bg"
+                android:padding="8dp"
+                android:layout_marginBottom="12dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_11" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|start"
+                        android:layout_margin="6dp"
+                        android:text="📍 Colombo"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:background="#55000000"
+                        android:paddingHorizontal="6dp"
+                        android:paddingVertical="2dp" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LeisureWorld "
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginTop="6dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⭐ 4.3 (78)"
+                    android:textSize="12sp"
+                    android:textColor="#F5A623" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Don't buy full premium packaged, most of the slides and machines are not working, Just buy normal water package and buy anything not included separately."
+                    android:textSize="12sp"
+                    android:textColor="#666666"
+                    android:maxLines="3"
+                    android:ellipsize="end" />
+            </LinearLayout>
+
+            <!-- Copy the above block and update for each place -->
+            <!-- Example: Lotus Tower -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_white_bg"
+                android:padding="8dp"
+                android:layout_marginBottom="12dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_12" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|start"
+                        android:layout_margin="6dp"
+                        android:text="📍 Colombo"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:background="#55000000"
+                        android:paddingHorizontal="6dp"
+                        android:paddingVertical="2dp" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Water world"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginTop="6dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⭐ 3.7 (28)"
+                    android:textSize="12sp"
+                    android:textColor="#F5A623" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="At Water World Kelaniya, explore vibrant marine life, from colorful fish to fascinating sea creatures. The freshwater collection"
+                    android:textSize="12sp"
+                    android:textColor="#666666"
+                    android:maxLines="3"
+                    android:ellipsize="end" />
+            </LinearLayout>
+
+            <!-- Repeat for other locations like Gangaramaya, Park, Zoo, Port City -->
+            <!-- Replace image and text content as needed -->
+
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>

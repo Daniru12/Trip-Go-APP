@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Explore"
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/world_svgrepo_com"/>
+    <item android:title="Saved"
+        android:id="@+id/cartFragment"
+        android:icon="@drawable/heart_svgrepo_com__1_"/>
+    <item android:title="Add Plan"
+        android:id="@+id/searchFragment"
+        android:icon="@drawable/plus_circle_svgrepo_com__1_"/>
+    <item android:title="Near Me"
+        android:id="@+id/historyFragment"
+        android:icon="@drawable/near_me_svgrepo_com"/>
+    <item android:title="Profile"
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/person"/>
+</menu>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Profile Image -->
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/circle_outline"
+            android:clipToOutline="true"
+            android:contentDescription="Profile Image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/p" />
+
+
+        <!-- Name -->
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daniru Ranathunga"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginTop="12dp" />
+
+        <!-- Username -->
+        <TextView
+            android:id="@+id/user_handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="daniru@"
+            android:textSize="14sp"
+            android:textColor="#888888"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Profile Options -->
+
+
+        <!-- Profile Options -->
+        <!-- Menu Items -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_white_bg">
+
+            <TextView style="@style/ProfileItem" android:text="         📋  Bookings" />
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#DDDDDD" />
+
+            <TextView style="@style/ProfileItem" android:text="         🗂️  My Plans" />
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#DDDDDD" />
+
+            <TextView style="@style/ProfileItem" android:text="         👤  My Details" />
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#DDDDDD" />
+
+            <TextView style="@style/ProfileItem" android:text="         ⭐  Reviews" />
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#DDDDDD" />
+
+            <TextView style="@style/ProfileItem" android:text="         ❓  Help Center" />
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#DDDDDD" />
+
+            <TextView style="@style/ProfileItem" android:text="         👍  Rate our app" />
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#DDDDDD" />
+
+            <TextView style="@style/ProfileItem" android:text="         ⚙️  Settings" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
+
